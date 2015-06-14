@@ -9,16 +9,24 @@ This is a first implementation of a docker-composer environment to raise a pipel
 
 # Setup
 
-* Fetch latest archive and unpack it somewhere.
-* sudo mkdir /srv/popcorns/sickrage-config /srv/popcorns/sickrage-data /srv/popcorns/downloads /srv/popcorns/tv /srv/popcorns/plex-library /srv/popcorns/downloads
-* sudo chmod 777 /srv/popcorns/*
+* Fetch [latest archive](https://github.com/gionn/docker-popcorns/archive/master.zip) and unpack it somewhere.
+* Create persistent data folders:
+```
+sudo mkdir /srv/popcorns/{sickrage-config,sickrage-data,downloads,tv,plex-library,downloads}
+```
+
+* Give permissions (we don't care):
+```
+sudo chmod 777 /srv/popcorns/*
+```
+
 * docker-compose up
 
 ### SickRage
 
-* Access to http://localhost:8081.
-* [Configure Torrent search](http://localhost:8081/config/search/): enable transmission, url http://localhost:9091, user admin, password admin.
-* [Configure search providers](http://localhost:8081/config/providers)
+* Access to [http://localhost:8081](http://localhost:8081).
+* [Configure Torrent search](http://localhost:8081/config/search/): enable transmission intgration, set *url* **http://localhost:9091**, user *admin*, password *admin*.
+* [Configure search providers](http://localhost:8081/config/providers), enable some of them (note: some requires user/password).
 * [Configure post-processing](http://localhost:8081/config/postProcessing/) set *tv download dir* to **/downloads**, enable *Scan and Process*.
 * [Add a new show](http://localhost:8081/home/addShows/newShow/), set **/tv** as *parent folder*.
 
