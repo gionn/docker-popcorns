@@ -22,6 +22,8 @@ sudo chmod 777 /srv/popcorns/*
 
 * docker-compose up
 
+## Configuration
+
 ### SickRage
 
 * Access to [http://localhost:8081](http://localhost:8081).
@@ -37,3 +39,9 @@ sudo chmod 777 /srv/popcorns/*
 ### Plex
 
 * Access to [http://localhost:32400/web/index.html](http://localhost:32400/web/index.html), add **/tv** as TV series folder
+
+## Credits of docker images
+
+* Sickrage: [gionn/sickrage](https://registry.hub.docker.com/u/gionn/sickrage/)
+* Transmission: [dperson/transmission](https://registry.hub.docker.com/u/dperson/transmission/)
+* Plex: [gionn/plex](https://registry.hub.docker.com/u/gionn/plex/)
