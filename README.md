@@ -32,8 +32,8 @@ sudo chmod 777 /srv/popcorns/*
 
 ### Transmission
 
-* Access to http://localhost:9091, user admin, pass admin.
+* Access to [http://localhost:9091](http://localhost:9091), user admin, pass admin.
 
 ### Plex
 
-* Access to http://localhost:32400/web/index.html, add **/tv** as TV series folder
+* Access to [http://localhost:32400/web/index.html](http://localhost:32400/web/index.html), add **/tv** as TV series folder
